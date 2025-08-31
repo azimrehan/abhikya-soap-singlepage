@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { ShoppingCart, Menu, X, Instagram, Leaf } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import logoImage from '@/assets/logo.jpg';
-import heroBackground from '@/assets/hero-background.jpg';
+import logoCard from '@/assets/logo-card.png';
+import soapHeroBackground from '@/assets/soap-hero-background.jpg';
 import funShapedSoaps from '@/assets/fun-shaped-soaps.jpg';
 import floralCollection from '@/assets/floral-collection.jpg';
 import herbalCollection from '@/assets/herbal-collection.jpg';
@@ -40,7 +40,7 @@ const SoapLandingPage = () => {
             {/* Logo and Brand */}
             <div className="flex items-center gap-4">
               <img 
-                src={logoImage} 
+                src={logoCard} 
                 alt="Abhikya's Logo" 
                 className="w-12 h-12 rounded-full object-cover shadow-md"
               />
@@ -101,9 +101,9 @@ const SoapLandingPage = () => {
       <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-          style={{ backgroundImage: `url(${heroBackground})` }}
+          style={{ backgroundImage: `url(${soapHeroBackground})` }}
         >
-          <div className="absolute inset-0 bg-cream-bg/80"></div>
+          <div className="absolute inset-0 bg-cream-bg/70"></div>
         </div>
         
         <div className="relative z-10 container mx-auto px-4 text-center">
@@ -142,7 +142,7 @@ const SoapLandingPage = () => {
               </div>
               <div className="p-6">
                 <h3 className="font-playfair text-2xl font-semibold text-dark-leaf mb-2">Fun Shaped Soaps</h3>
-                <p className="font-inter text-muted-foreground mb-4">Delightful shapes that make bath time fun for the whole family.</p>
+                <p className="font-inter text-muted-foreground mb-4">Butterfly, Rose, Teddy Bear, and more delightful shapes that make bath time magical for kids and adults alike.</p>
                 <Button variant="soap-outline" className="w-full" onClick={addToCart}>
                   Add to Cart
                 </Button>
@@ -159,8 +159,8 @@ const SoapLandingPage = () => {
                 />
               </div>
               <div className="p-6">
-                <h3 className="font-playfair text-2xl font-semibold text-dark-leaf mb-2">Floral Collection</h3>
-                <p className="font-inter text-muted-foreground mb-4">Infused with real flower petals for a luxurious bathing experience.</p>
+                <h3 className="font-playfair text-2xl font-semibold text-dark-leaf mb-2">🌹 Floral Collection</h3>
+                <p className="font-inter text-muted-foreground mb-4">Rose Bliss, Lavender Calm, Jasmine Glow, Champa Serenity, and Mogra Bliss - romantic florals with nourishing oils.</p>
                 <Button variant="soap-outline" className="w-full" onClick={addToCart}>
                   Add to Cart
                 </Button>
@@ -177,8 +177,8 @@ const SoapLandingPage = () => {
                 />
               </div>
               <div className="p-6">
-                <h3 className="font-playfair text-2xl font-semibold text-dark-leaf mb-2">Herbal Collection</h3>
-                <p className="font-inter text-muted-foreground mb-4">Therapeutic herbs for gentle cleansing and skin nourishment.</p>
+                <h3 className="font-playfair text-2xl font-semibold text-dark-leaf mb-2">🌿 Herbal Collection</h3>
+                <p className="font-inter text-muted-foreground mb-4">Neem Guard, Aloe Vera Fresh, and Turmeric Glow - therapeutic herbs for purifying and revitalizing your skin naturally.</p>
                 <Button variant="soap-outline" className="w-full" onClick={addToCart}>
                   Add to Cart
                 </Button>
@@ -212,7 +212,7 @@ const SoapLandingPage = () => {
             <div className="order-1 md:order-2">
               <div className="relative">
                 <img 
-                  src={logoImage} 
+                  src={logoCard} 
                   alt="Abhikya's Family Soap Story" 
                   className="w-full rounded-2xl shadow-xl"
                 />
@@ -256,9 +256,9 @@ const SoapLandingPage = () => {
             {/* Brand */}
             <div className="col-span-2 md:col-span-1">
               <div className="flex items-center gap-4 mb-4">
-                <img 
-                  src={logoImage} 
-                  alt="Abhikya's Logo" 
+              <img 
+                src={logoCard} 
+                alt="Abhikya's Logo" 
                   className="w-12 h-12 rounded-full object-cover"
                 />
                 <div className="flex flex-col">
