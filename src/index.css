@@ -8,35 +8,53 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Abhikya Soap Color Palette */
+    --background: 32 29% 98%; /* #fdfaf6 - warm creamy off-white */
+    --foreground: 120 15% 25%; /* Dark text for contrast */
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card: 32 29% 98%;
+    --card-foreground: 120 15% 25%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover: 32 29% 98%;
+    --popover-foreground: 120 15% 25%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 100 11% 47%; /* #6a8264 - muted leaf green */
+    --primary-foreground: 32 29% 98%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 32 25% 95%; /* Lighter cream for secondary elements */
+    --secondary-foreground: 120 15% 25%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 32 25% 95%;
+    --muted-foreground: 120 8% 45%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 100 16% 36%; /* #556b50 - darker brownish-green */
+    --accent-foreground: 32 29% 98%;
 
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 32 29% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 32 20% 90%;
+    --input: 32 20% 90%;
+    --ring: 100 11% 47%;
 
-    --radius: 0.5rem;
+    --radius: 0.75rem;
+
+    /* Custom soap-themed tokens */
+    --leaf-green: 100 11% 47%; /* #6a8264 */
+    --dark-leaf: 100 16% 36%; /* #556b50 */
+    --cream-bg: 32 29% 98%; /* #fdfaf6 */
+    --warm-white: 32 25% 95%;
+    
+    /* Gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(var(--cream-bg)), hsl(var(--warm-white)));
+    --gradient-card: linear-gradient(145deg, hsl(var(--card)), hsl(var(--warm-white)));
+    
+    /* Shadows */
+    --shadow-soft: 0 4px 20px -4px hsl(var(--leaf-green) / 0.15);
+    --shadow-card: 0 8px 32px -8px hsl(var(--dark-leaf) / 0.2);
+    --shadow-hover: 0 12px 40px -8px hsl(var(--leaf-green) / 0.25);
+
+    --radius: 0.75rem;
 
     --sidebar-background: 0 0% 98%;
 
