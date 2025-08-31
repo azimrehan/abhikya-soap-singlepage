@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { ShoppingCart, Menu, X, Instagram, Leaf } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import { useNavigate } from 'react-router-dom';
 import logoCard from '@/assets/logo-card.png';
 import soapHeroBackground from '@/assets/soap-hero-background.jpg';
 import funShapedSoaps from '@/assets/fun-shaped-soaps.jpg';
@@ -8,6 +9,7 @@ import floralCollection from '@/assets/floral-collection.jpg';
 import herbalCollection from '@/assets/herbal-collection.jpg';
 
 const SoapLandingPage = () => {
+  const navigate = useNavigate();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [cartCount, setCartCount] = useState(0);
   const [showNotification, setShowNotification] = useState(false);
@@ -113,7 +115,7 @@ const SoapLandingPage = () => {
           <p className="font-inter text-xl md:text-2xl text-muted-foreground mb-8 max-w-3xl mx-auto leading-relaxed">
             Handmade, Pure, and Chemical-Free soaps crafted with the finest natural ingredients for your family.
           </p>
-          <Button variant="soap" size="hero" onClick={addToCart}>
+          <Button variant="soap" size="hero" onClick={() => navigate('/products')}>
             Shop Now
           </Button>
         </div>
@@ -143,8 +145,12 @@ const SoapLandingPage = () => {
               <div className="p-6">
                 <h3 className="font-playfair text-2xl font-semibold text-dark-leaf mb-2">Fun Shaped Soaps</h3>
                 <p className="font-inter text-muted-foreground mb-4">Butterfly, Rose, Teddy Bear, and more delightful shapes that make bath time magical for kids and adults alike.</p>
-                <Button variant="soap-outline" className="w-full" onClick={addToCart}>
-                  Add to Cart
+                <Button 
+                  variant="soap-outline" 
+                  className="w-full" 
+                  onClick={() => navigate('/products')}
+                >
+                  View Products
                 </Button>
               </div>
             </div>
@@ -161,8 +167,12 @@ const SoapLandingPage = () => {
               <div className="p-6">
                 <h3 className="font-playfair text-2xl font-semibold text-dark-leaf mb-2">🌹 Floral Collection</h3>
                 <p className="font-inter text-muted-foreground mb-4">Rose Bliss, Lavender Calm, Jasmine Glow, Champa Serenity, and Mogra Bliss - romantic florals with nourishing oils.</p>
-                <Button variant="soap-outline" className="w-full" onClick={addToCart}>
-                  Add to Cart
+                <Button 
+                  variant="soap-outline" 
+                  className="w-full" 
+                  onClick={() => navigate('/products')}
+                >
+                  View Products
                 </Button>
               </div>
             </div>
@@ -179,8 +189,12 @@ const SoapLandingPage = () => {
               <div className="p-6">
                 <h3 className="font-playfair text-2xl font-semibold text-dark-leaf mb-2">🌿 Herbal Collection</h3>
                 <p className="font-inter text-muted-foreground mb-4">Neem Guard, Aloe Vera Fresh, and Turmeric Glow - therapeutic herbs for purifying and revitalizing your skin naturally.</p>
-                <Button variant="soap-outline" className="w-full" onClick={addToCart}>
-                  Add to Cart
+                <Button 
+                  variant="soap-outline" 
+                  className="w-full" 
+                  onClick={() => navigate('/products')}
+                >
+                  View Products
                 </Button>
               </div>
             </div>
