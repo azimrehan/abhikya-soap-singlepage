@@ -137,7 +137,12 @@ const Cart = () => {
                   </div>
                 </div>
 
-                <Button variant="soap" size="lg" className="w-full mb-3">
+                <Button 
+                  variant="soap" 
+                  size="lg" 
+                  className="w-full mb-3"
+                  onClick={() => navigate('/payment')}
+                >
                   Proceed to Checkout
                 </Button>
                 
