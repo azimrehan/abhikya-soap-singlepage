@@ -1,73 +1,98 @@
-# Welcome to your Lovable project
+# Abhikya Natural Soaps Storefront
 
-## Project info
+A modern, responsive e-commerce web application for artisanal handmade natural soaps. Built with React 18, TypeScript, Vite, Tailwind CSS, and Radix UI / shadcn components.
 
-**URL**: https://lovable.dev/projects/c22812c7-372c-49ec-b5cb-33e84b4caac7
+---
 
-## How can I edit this code?
+## Features
 
-There are several ways of editing your application.
+- **Hero & Storytelling Showcase**: Warm, elegant typography and imagery introducing pure, chemical-free handmade soap collections.
+- **Product Catalog & Category Exploration**: Dynamic product grid with filtering across soap categories, ingredient highlights, and pricing cards.
+- **Interactive Cart Management**: Add-to-cart functionality, quantity adjustment, subtotal calculations, and cart drawer preview.
+- **Checkout & Payment Flow**: Multi-step checkout experience including delivery address entry, payment method selection, and order confirmation receipt.
+- **Accessible UI Primitives**: Accessible design using Radix UI components (dialogs, tooltips, accordions, dropdowns) styled with Tailwind CSS.
+- **Toast Notifications**: Interactive status alerts via Sonner for cart updates and order progression.
 
-**Use Lovable**
+---
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/c22812c7-372c-49ec-b5cb-33e84b4caac7) and start prompting.
+## Tech Stack
 
-Changes made via Lovable will be committed automatically to this repo.
+- **Core**: React 18, TypeScript, Vite
+- **Styling**: Tailwind CSS, Tailwind CSS Animate, PostCSS
+- **UI Primitives**: Radix UI, shadcn/ui components
+- **Routing**: React Router DOM v6
+- **State & Data Fetching**: TanStack React Query
+- **Icons**: Lucide React
+- **Forms & Validation**: React Hook Form, Zod
 
-**Use your preferred IDE**
+---
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+## Project Structure
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+```text
+abhikya-soap-singlepage/
+├── public/                 # Static assets and icons
+├── src/
+│   ├── assets/             # Brand logos, soap imagery, and illustrations
+│   ├── components/         # Reusable UI components & shadcn primitives
+│   │   └── ui/             # Buttons, cards, modals, toast, and inputs
+│   ├── hooks/              # Custom React hooks (toast, mobile detection)
+│   ├── lib/                # Utility helpers and clsx/tailwind-merge
+│   ├── pages/              # Primary route views (Index, Products, Cart, Payment)
+│   ├── App.css
+│   ├── App.tsx             # Application routes and context providers
+│   ├── index.css           # Global Tailwind and font styles
+│   └── main.tsx            # Vite DOM hydration entry
+├── index.html              # HTML shell with Google fonts
+├── package.json            # Project dependencies and scripts
+├── tailwind.config.ts      # Tailwind configuration with custom theme tokens
+├── tsconfig.json           # TypeScript compiler configuration
+└── vite.config.ts          # Vite bundler configuration
 ```
 
-**Edit a file directly in GitHub**
+---
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## Getting Started
 
-**Use GitHub Codespaces**
+### Prerequisites
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+- Node.js (v18 or higher recommended)
+- npm, pnpm, or yarn
 
-## What technologies are used for this project?
+### Installation
 
-This project is built with:
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/azimrehan/abhikya-soap-singlepage.git
+   cd abhikya-soap-singlepage
+   ```
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
 
-## How can I deploy this project?
+3. Start development server:
+   ```bash
+   npm run dev
+   ```
 
-Simply open [Lovable](https://lovable.dev/projects/c22812c7-372c-49ec-b5cb-33e84b4caac7) and click on Share -> Publish.
+   Open your browser at `http://localhost:8080`.
 
-## Can I connect a custom domain to my Lovable project?
+### Production Build
 
-Yes, you can!
+To build the static production bundle:
+```bash
+npm run build
+```
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+Preview the production build locally:
+```bash
+npm run preview
+```
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+---
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
